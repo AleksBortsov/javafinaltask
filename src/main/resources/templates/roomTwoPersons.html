@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Two persons room</title>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.2.3/dist/css/bootstrap.css}">
+</head>
+<body>
+<table class="table table-sm table-success table-striped table-hover">
+    <thead class="table-dark">
+    <tr>
+        <th>#</th>
+        <th>Room Two Persons</th>
+        <th></th>
+        <th>Persons</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="a : ${roomTwoPersons}">
+        <td th:text="${a.id}"></td>
+        <td th:text="${a.name()}"></td>
+        <td>person</td>
+    </tr>
+    </tbody>
+</table>
+<script th:src="@{webjars/jquery/3.7.0/dist/jquery.js}"></script>
+<script th:src="@{webjars/popperjs__core/2.11.6/dist/umd/popper.js}"></script>
+<script th:src="@{webjars/bootstrap/5.2.3/dist/js/bootstrap.js}"></script>
+
+</body>
+</html>

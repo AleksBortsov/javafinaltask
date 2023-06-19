@@ -1,10 +1,10 @@
-package com.example.webdemo1206;
+package com.example.hotel;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Webdemo1206ApplicationTests {
+class HotelApplicationTests {
 
     @Test
     void contextLoads() {
